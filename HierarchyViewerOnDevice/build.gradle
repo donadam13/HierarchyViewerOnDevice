@@ -11,6 +11,10 @@ apply plugin: 'android'
 
 repositories {
     mavenCentral()
+
+    maven {
+        url 'https://raw.github.com/ark/ark/master/snapshots/'
+    }
 }
 
 android {
@@ -25,5 +29,5 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
-    compile project(':viewserver')
+    compile 'com.romainguy:viewserver:1.0-SNAPSHOT'
 }
